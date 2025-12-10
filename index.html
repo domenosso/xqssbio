@@ -1,90 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Биография</title>
-<style>
-html { background:#000000; }
-body {
-margin: 0;
-font-family: "Inter", sans-serif;
-background:#000000;
-color: #f5f5f5;
-}
-header {
-padding: 40px 20px 5px 20px;
-text-align: center;
-}
-h1 {
-font-size: 2.4rem;
-margin-bottom: 10px;
-}
-.subtitle {
-font-size: 1.1rem;
-opacity: 0.85;
-}
-.container {
-width: 92%;
-max-width: 900px;
-margin: 0 auto;
-padding: 30px;
-background: rgba(255, 255, 255, 0.12);
-border-radius: 40px;
-backdrop-filter: blur(25px);
-box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
-}
-p {
-line-height: 1.7;
-font-size: 1.2rem;
-}
-.contacts-title {
-text-align: center;
-margin-top: 40px;
-font-size: 1.5rem;
-font-weight: bold;
-}
-.tg-icon {
-display: block;
-margin: 15px auto 0 auto;
-width: 70px;
-height: 70px;
-border-radius: 50%;
-}
-@media (max-width: 600px) {
-h1 { font-size: 1.9rem; }
-p { font-size: 1.05rem; }
-.container { padding: 20px; border-radius: 30px; }
-.tg-icon { width: 60px; height: 60px; }
-}
-/* Анимация появления контейнера */
-.container {
-animation: fadeUp 1.2s ease;
-}
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(25px); }
-to { opacity: 1; transform: translateY(0); }
-}
-/* Анимация иконки */
-.tg-icon {
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.tg-icon:hover {
-transform: scale(1.12);
-box-shadow: 0 0 18px rgba(255,255,255,0.4);
-}
-/* Улучшенная адаптивность */
-@media (max-width: 420px) {
-h1 { font-size: 1.6rem; }
-.subtitle { font-size: 0.95rem; }
-p { font-size: 0.95rem; }
-.container { padding: 18px; }
-.tg-icon { width: 48px !important; height: 48px !important; }
-}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Биография</title>
+    <style>
+        html { background:#000000; }
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background:#000000;
+            color: #f5f5f5;
+        }
+        header {
+            padding: 40px 20px 5px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+        .container {
+            width: 92%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 40px;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+        }
+        p {
+            line-height: 1.7;
+            font-size: 1.2rem;
+        }
+        .contacts-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .tg-icon {
+            display: block;
+            margin: 15px auto 0 auto;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.9rem; }
+            p { font-size: 1.05rem; }
+            .container { padding: 20px; border-radius: 30px; }
+            .tg-icon { width: 60px; height: 60px; }
+        }
+            /* Анимация появления контейнера */
+        .container {
+            animation: fadeUp 1.2s ease;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Анимация иконки */
+        .tg-icon {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tg-icon:hover {
+            transform: scale(1.12);
+            box-shadow: 0 0 18px rgba(255,255,255,0.4);
+        }
+        /* Улучшенная адаптивность */
+        @media (max-width: 420px) {
+            h1 { font-size: 1.6rem; }
+            .subtitle { font-size: 0.95rem; }
+            p { font-size: 0.95rem; }
+            .container { padding: 18px; }
+            .tg-icon { width: 48px !important; height: 48px !important; }
+        }
+    </style>
 <canvas id="snow"></canvas>
 </head>
 <body>
-<header>
-<h1>Моя биография</h1>
-<div class="subtitle">“Каждый день — новый шанс стать лучше, чем вчера.”
+    <header>
+        <h1>Моя биография</h1>
+        <div class="subtitle">“Каждый день — новый шанс стать лучше, чем вчера.”    
+</div>
+    </header>
+
+    <div class="container" style="margin-top:35px;">
+    <p style="font-size:1.3rem; line-height:1.9;">
+        Меня зовут Павел. Я — увлечённый программист, который стремится превращать идеи в живые решения.
+        Владею языками <strong>Python</strong>, <strong>C#</strong> и <strong>Lua</strong> — они помогают мне строить проекты разной сложности
+        и постоянно расширять свои навыки.
+        <br><br>
+        Вне программирования я нахожу вдохновение в игре в баскетбол — этот спорт дисциплинирует, учит работать в команде
+        и всегда двигаться вперёд.
+    </p>
+
+        <p class="contacts-title" style="margin-top:50px;">Мои контакты</p>
+        <a href="https://t.me/xqss_DEVELOPER" target="_blank">
+            <img class="tg-icon" style="width:50px;height:50px;" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" />
+        </a>
+    </div>
+
+    
+<script>
+const canvas = document.getElementById('snow');
+const ctx = canvas.getContext('2d');
+let w, h;
+function resize(){ w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
+window.addEventListener('resize', resize); resize();
+const flakes = Array.from({length:150}, ()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*3+1,spd:Math.random()*0.35+0.1}));
+function draw(){ ctx.clearRect(0,0,w,h); ctx.fillStyle='white'; flakes.forEach(f=>{ ctx.beginPath(); ctx.arc(f.x,f.y,f.r,0,Math.PI*2); ctx.fill(); f.y+=f.spd; if(f.y>h) f.y=-5; }); requestAnimationFrame(draw);} draw();
+canvas.style.position='fixed'; canvas.style.top='0'; canvas.style.left='0'; canvas.style.pointerEvents='none'; canvas.style.zIndex='9999';
+</script>
+</body>
+<style>html,body{background:#000;min-height:100vh;overflow-x:hidden;}</style>
+</html>
