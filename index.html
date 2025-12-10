@@ -17,7 +17,7 @@
             text-align: center;
         }
         h1 {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             margin-bottom: 10px;
         }
         .subtitle {
@@ -26,9 +26,9 @@
         }
         .container {
             width: 92%;
-            max-width: 900px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 30px;
+            padding: 18px;
             background: rgba(255, 255, 255, 0.12);
             border-radius: 40px;
             backdrop-filter: blur(25px);
@@ -36,7 +36,7 @@
         }
         p {
             line-height: 1.7;
-            font-size: 1.2rem;
+            font-size:1rem;
         }
         .contacts-title {
             text-align: center;
@@ -82,7 +82,7 @@
             .tg-icon { width: 48px !important; height: 48px !important; }
         }
     </style>
-<canvas id="snow"></canvas>
+
 </head>
 <body>
     <header>
@@ -92,7 +92,7 @@
     </header>
 
     <div class="container" style="margin-top:35px;">
-    <p style="font-size:1.3rem; line-height:1.9;">
+    <p style="font-size:1.05rem; line-height:1.9;">
         Меня зовут Павел. Я — увлечённый программист, который стремится превращать идеи в живые решения.
         Владею языками <strong>Python</strong>, <strong>C#</strong> и <strong>Lua</strong> — они помогают мне строить проекты разной сложности
         и постоянно расширять свои навыки.
@@ -108,16 +108,7 @@
     </div>
 
     
-<script>
-const canvas = document.getElementById('snow');
-const ctx = canvas.getContext('2d');
-let w, h;
-function resize(){ w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
-window.addEventListener('resize', resize); resize();
-const flakes = Array.from({length:150}, ()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*3+1,spd:Math.random()*0.35+0.1}));
-function draw(){ ctx.clearRect(0,0,w,h); ctx.fillStyle='white'; flakes.forEach(f=>{ ctx.beginPath(); ctx.arc(f.x,f.y,f.r,0,Math.PI*2); ctx.fill(); f.y+=f.spd; if(f.y>h) f.y=-5; }); requestAnimationFrame(draw);} draw();
-canvas.style.position='fixed'; canvas.style.top='0'; canvas.style.left='0'; canvas.style.pointerEvents='none'; canvas.style.zIndex='9999';
-</script>
+
 </body>
 <style>html,body{background:#000;min-height:100vh;overflow-x:hidden;}</style>
 </html>
